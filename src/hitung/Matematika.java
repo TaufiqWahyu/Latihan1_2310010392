@@ -1,21 +1,17 @@
 package hitung;
 
 public class Matematika {
-    public int tambah(int a, int b){
-        return a + b;
+    //membuat variabel
+    private double bil1, bil2;
+    
+    //membuat constructor
+    public Matematika(double bil1, double bil2){
+        this.bil1 = bil1;
+        this.bil2 = bil2;
     }
-    public int kurang(int a, int b){
-        return a - b;
-    }
-    public int kali(int a, int b){
-        return a * b;
-    }
-    public int bagi(int a, int b){
-        if (b != 0){
-            return a / b;
-        }else{
-            System.out.println("Error: Pembagian dengan nol tidak dapat dilakukan!");
-                    return 0;
-        }
+    
+    //membuat method set penjumlahan
+    double setPenjumlahan(){
+        return bil1 + bil2;
     }
 }
